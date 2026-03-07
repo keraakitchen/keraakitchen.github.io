@@ -1,0 +1,341 @@
+/* Global Variables & Fonts */
+:root {
+    --primary-color: #2e7d32;      /* Kerala Green */
+    --primary-dark: #1b5e20;
+    --accent-color: #f9a826;       /* Warm yellow/orange */
+    --accent-hover: #f57f17;
+    --dark-bg: #121212;
+    --light-bg: #f8f9fa;
+    --text-main: #333333;
+    --text-muted: #6c757d;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-logo: 'Dyuthi', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Exact final height of shrunk navbar */
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-playfair {
+    font-family: var(--font-body);
+}
+
+.font-logo {
+    font-family: var(--font-logo);
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(249, 168, 38, 0.3) !important;
+}
+
+.page-section {
+    padding: 6rem 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.section-subheading {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: var(--font-body);
+}
+
+/* Navbar Customization */
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: transparent;
+    transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s;
+}
+
+#mainNav .navbar-brand {
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+/* Logo Glossy Animation */
+.logo-glossy {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.logo-glossy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-20deg);
+    animation: shine 5s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+#mainNav .navbar-brand img {
+    height: 100%;
+    max-height: 55px; /* Keeps it from blowing up the navbar padding */
+    width: auto;
+    object-fit: contain;
+}
+
+#mainNav .nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s;
+}
+
+#mainNav .nav-link:hover, #mainNav .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+#mainNav.navbar-scrolled {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: var(--primary-dark) !important;
+    background-image: url('https://www.transparenttextures.com/patterns/leaves-pattern.png');
+    background-blend-mode: overlay;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: url('assets/images/hero.png') no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    opacity: 0; /* Handled by JS animation */
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator a {
+    color: white;
+    font-size: 2rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.scroll-indicator a:hover {
+    opacity: 1;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-20px) translateX(-50%); }
+    60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+/* About Section */
+.about-image-wrapper {
+    position: relative;
+    height: 400px;
+    background: url('assets/images/sadya.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+}
+
+.img-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    font-weight: 700;
+    color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-badge i {
+    color: var(--accent-color);
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+}
+
+/* Menu Section */
+.menu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-card:hover .card-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.price-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Parallax Divider Section */
+.parallax-section {
+    position: relative;
+    padding: 8rem 0;
+    background: url('assets/images/biryani.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 94, 32, 0.85); /* Green overlay */
+}
+
+.z-index-1 {
+    position: relative;
+    z-index: 1;
+}
+
+/* Order Box */
+.order-box {
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.order-box:hover {
+    transform: translateY(-5px);
+}
+
+.btn-social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fade In Animations via jQuery Class Toggling */
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    filter: blur(8px);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+                filter 1s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform, filter;
+}
+
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    #mainNav {
+        background-color: var(--primary-dark) !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .hero-section {
+        background-attachment: scroll; /* Disable parallax on mobile for better perf */
+    }
+    .parallax-section {
+        background-attachment: scroll;
+    }
+}

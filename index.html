@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keraa Kitchen | Authentic Kerala Cloud Kitchen</title>
+    <meta name="description"
+        content="Experience the authentic taste of Kerala at home. Order traditional biryani, appam, sadya and more from our premium cloud kitchen.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Dyuthi&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-white fs-3 font-logo d-flex align-items-center gap-2" href="#home"
+                style="text-decoration: none;">
+                <span class="logo-glossy d-inline-block">
+                    <img src="assets/images/logo.png" alt="Logo">
+                </span>
+                Keraa Kitchen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 col-md-10 text-center mx-auto hero-content animate-on-load">
+                    <h1 class="display-3 fw-bold text-white mb-4">God's Own <span class="text-accent">Flavors</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-5 fs-4">Delivering the authentic, soul-warming tastes of Kerala
+                        straight to your doorstep. Experience our premium cloud kitchen today.</p>
+                    <a href="#menu"
+                        class="btn btn-accent btn-lg px-5 py-3 rounded-pill shadow-lg text-uppercase fw-bold">Explore
+                        Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-in-scroll">
+                    <div class="about-image-wrapper">
+                        <!-- We will use a placeholder layout, styled in CSS -->
+                        <div class="img-badge"><i class="fa-solid fa-star"></i> 5/5 Ratings</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-scroll delay-1">
+                    <h2 class="section-heading text-uppercase">Our Story</h2>
+                    <h3 class="section-subheading text-muted mb-4">Bringing traditional recipes from Kerala to your
+                        living room.</h3>
+                    <p class="text-muted lh-lg mb-4">Keraa Kitchen isn't just a cloud kitchen; it's a nostalgic journey
+                        back to the lush green landscapes and warm kitchens of Kerala. Our chefs use hand-pounded
+                        spices, fresh coconut, and generational recipes to craft dishes that comfort the soul. No
+                        artificial colors, no shortcuts—just pure, authentic taste.</p>
+                    <ul class="list-unstyled custom-list text-muted">
+                        <li><i class="fa-solid fa-check text-success me-2"></i> 100% Authentic Kerala Recipes</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Freshly Ground Spices</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Premium Quality Ingredients</li>
+                        <li><i class="fa-solid fa-check text-success me-2"></i> Fast & Safe Delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="page-section bg-light" id="menu">
+        <div class="container">
+            <div class="text-center fade-in-scroll">
+                <h2 class="section-heading text-uppercase">Signature Menu</h2>
+                <h3 class="section-subheading text-muted mb-5">Prepared fresh upon order.</h3>
+            </div>
+            <div class="row g-4">
+                <!-- Menu Item 1 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-1">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/biryani.png" class="card-img-top" alt="Thalassery Biryani">
+                            <div class="price-tag">₹350</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Thalassery Chicken Biryani</h4>
+                            <p class="card-text text-muted">Aromatic Kaima rice cooked with tender chicken, exotic
+                                spices, and garnished with fried onions and cashews.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-2">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/sadya.png" class="card-img-top" alt="Kerala Sadya">
+                            <div class="price-tag">₹450</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Grand Kerala Sadya</h4>
+                            <p class="card-text text-muted">A traditional feast served on a banana leaf featuring rice,
+                                sambar, avial, thoran, payasam, and more.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-3">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/appam.png" class="card-img-top" alt="Appam and Stew">
+                            <div class="price-tag">₹220</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Appam & Veg Stew</h4>
+                            <p class="card-text text-muted">Soft, laced rice pancakes served with a rich, aromatic
+                                coconut milk-based mixed vegetable stew.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-1">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/idli.png" class="card-img-top" alt="Idli and Sambar">
+                            <div class="price-tag">₹150</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Soft Idli & Kerala Sambar</h4>
+                            <p class="card-text text-muted">Three pieces of soft, fluffy steamed rice cakes served with
+                                spicy, aromatic Kerala-style sambar and fresh coconut chutney.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-2">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/pothichoru.png" class="card-img-top" alt="Kerala Pothichoru">
+                            <div class="price-tag">₹280</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Traditional Pothichoru</h4>
+                            <p class="card-text text-muted">A nostalgic meal wrapped in a roasted banana leaf, packed
+                                with matta rice, fish fry, beef roast, and homestyle curries.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-3">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Tasty_fried_prawn_dish.jpg"
+                                class="card-img-top" alt="Prawns Fry">
+                            <div class="price-tag">₹420</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Chemmeen Porichathu</h4>
+                            <p class="card-text text-muted">Spicy Kerala-style prawns marinated in dark roasted ground
+                                spices and shallow fried with fresh curry leaves.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-1">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Seer_Fish_Fry_at_Home.jpg"
+                                class="card-img-top" alt="Kingfish Curry">
+                            <div class="price-tag">₹380</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Neymeen Curry</h4>
+                            <p class="card-text text-muted">Authentic Kingfish cooked in a fiery, tangy red coconut and
+                                kudampuli (tamarind) gravy, served in a clay pot.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-2">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/chickenfry.jpg"
+                                class="card-img-top" alt="Nadan Chicken Fry">
+                            <div class="price-tag">₹290</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Nadan Chicken Fry</h4>
+                            <p class="card-text text-muted">Delicious Kerala country style chicken fry marinated with traditional spices and roasted to perfection.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 9 -->
+                <div class="col-lg-4 col-sm-6 fade-in-scroll delay-3">
+                    <div class="card menu-card h-100 shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/nadan-mutton-curry.jpg"
+                                class="card-img-top" alt="Nadan Mutton Curry">
+                            <div class="price-tag">₹450</div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Nadan Mutton Curry</h4>
+                            <p class="card-text text-muted">Authentic Kerala style mutton curry slow-cooked with roasted coconut and regional spices.</p>
+                            <button class="btn btn-outline-success rounded-pill px-4 mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 fade-in-scroll">
+                <button class="btn btn-dark btn-lg rounded-pill px-5">View Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider -->
+    <section class="parallax-section d-flex align-items-center justify-content-center text-center">
+        <div class="parallax-overlay"></div>
+        <div class="z-index-1 fade-in-scroll">
+            <h2 class="display-5 fw-bold text-white mb-3">Craving Something Special?</h2>
+            <p class="text-white-50 fs-5 mb-0">We accept bulk orders for parties and family gatherings.</p>
+        </div>
+    </section>
+
+    <!-- Contact & Order Section -->
+    <section class="page-section" id="contact">
+        <div class="container fade-in-scroll">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-heading text-uppercase">Order Now</h2>
+                    <h3 class="section-subheading text-muted mb-5">Available on all major food delivery platforms or
+                        order directly for a discount.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ms-auto text-center mb-5 mb-lg-0">
+                    <div class="order-box p-5 rounded-4 shadow-sm border">
+                        <i class="fa-solid fa-phone fs-1 text-success mb-3"></i>
+                        <h4 class="fw-bold">Call Us</h4>
+                        <p class="text-muted mb-0">+91 98765 43210</p>
+                        <hr class="my-4">
+                        <p class="text-muted small">Open daily from 11:00 AM to 11:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 me-auto text-center mb-5 mb-lg-0">
+                    <div class="order-box p-5 rounded-4 shadow-sm border">
+                        <i class="fa-regular fa-envelope fs-1 text-success mb-3"></i>
+                        <h4 class="fw-bold">Email Us</h4>
+                        <p class="text-muted mb-0">hello@keraakitchen.com</p>
+                        <hr class="my-4">
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-outline-dark btn-social rounded-circle"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-dark btn-social rounded-circle"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" class="btn btn-outline-dark btn-social rounded-circle"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Keraa Kitchen 2024</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="navbar-brand text-white fs-3 font-logo" href="#home" style="text-decoration: none;">Keraa
+                        Kitchen</a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-light text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
