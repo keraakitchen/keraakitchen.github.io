@@ -38,7 +38,8 @@ $(document).ready(function() {
 
     // 3. Smooth scrolling for nav links
     $('a.nav-link, .scroll-indicator a, .hero-content a').on('click', function(event) {
-        if (this.hash !== "") {
+        // Exclude tel links from smooth scroll intervention
+        if (this.hash !== "" && !this.href.startsWith("tel:")) {
             // Close mobile menu if open
             if($('.navbar-toggler').is(':visible')) {
                 $('.navbar-collapse').collapse('hide');
@@ -73,9 +74,9 @@ $(document).ready(function() {
     $window.trigger('scroll'); // Trigger on initial load
     
     // 5. Button click effects (Subtle scale)
-    $('.btn').on('mousedown', function() {
+    $('.btn').on('mousedown', function(e) {
         $(this).css('transform', 'scale(0.95)');
-    }).on('mouseup mouseleave', function() {
+    }).on('mouseup mouseleave click', function(e) {
         // Only return to normal state if it doesn't have a hover transform
         if(!$(this).hasClass('btn-accent') && !$(this).closest('.menu-card').length) {
             $(this).css('transform', 'scale(1)');
